@@ -1,2 +1,4 @@
-# Katas
-Code Repo for the client team katas. 
+# James
+
+### Notes
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

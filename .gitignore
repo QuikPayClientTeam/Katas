@@ -1,0 +1,7 @@
+# Compiled Sources
+*.class
+
+#eclipse files
+.classpath
+.project
+.settings
