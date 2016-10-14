@@ -1,3 +1,4 @@
+package kata1;
 import java.util.Random;
 
 public class kata1_diceroll {

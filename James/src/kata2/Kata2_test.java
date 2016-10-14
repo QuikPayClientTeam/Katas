@@ -1,3 +1,4 @@
+package kata2;
 import org.junit.*;
 import static org.junit.Assert.*;
 
