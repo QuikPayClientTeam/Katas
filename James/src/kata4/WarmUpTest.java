@@ -253,5 +253,42 @@ public class WarmUpTest {
 		assertEquals("doudoudou", AllThemWarmUps.front3("double"));
 	}
 	
+	@Test
+	public void in1020(){
+		assertTrue(AllThemWarmUps.in1020(11, 14));
+		assertTrue(AllThemWarmUps.in1020(11, 34));
+		assertTrue(AllThemWarmUps.in1020(55, 14));
+		assertFalse(AllThemWarmUps.in1020(55, 34));
+	}
 	
+	@Test
+	public void delDel(){
+		assertEquals("a", AllThemWarmUps.delDel("adel"));
+		assertEquals("", AllThemWarmUps.delDel(""));
+		assertEquals("abc", AllThemWarmUps.delDel("adelbc"));
+		assertEquals("abc", AllThemWarmUps.delDel("abc"));
+		assertEquals("dickerton", AllThemWarmUps.delDel("dickerton"));
+	}
+	
+	@Test
+	public void intMax(){
+		assertEquals(3, AllThemWarmUps.intMax(1, 2, 3));
+		assertEquals(6, AllThemWarmUps.intMax(1, 6, 2));
+		assertEquals(9, AllThemWarmUps.intMax(9, 4, 2));
+	}
+	
+	@Test
+	public void max1020(){
+		assertEquals(19, AllThemWarmUps.max1020(11, 19));
+		assertEquals(19, AllThemWarmUps.max1020(34, 19));
+		assertEquals(10, AllThemWarmUps.max1020(10, 55));
+		assertEquals(0, AllThemWarmUps.max1020(34, 55));
+	}
+	
+	@Test
+	public void endUp(){
+		assertEquals("", AllThemWarmUps.endUp(""));
+		assertEquals("X", AllThemWarmUps.endUp("x"));
+		assertEquals("booOOO", AllThemWarmUps.endUp("booooo"));
+	}
 }

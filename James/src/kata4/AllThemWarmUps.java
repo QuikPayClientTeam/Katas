@@ -288,4 +288,44 @@ public class AllThemWarmUps {
 			return str + str + str;
 		}
 	}
+
+	public static boolean in1020(int a, int b){
+		return ((a <= 20 && a >= 10) || (b <= 20 && b >= 10));
+	}
+	
+	public static String delDel(String str) {
+		  if(str.length() >= 4 && ("del".equalsIgnoreCase(str.substring(1, 4)))){
+			  return str.substring(0,1) + str.substring(4, str.length());
+		  } else {
+			  return str;
+		  }
+	}
+	
+	public static int intMax(int a, int b, int c) {
+		  return (Math.max(a, b) > c ) ? Math.max(a, b) : c;
+	}
+
+	public static int max1020(int a, int b) {
+		  if(((a <= 20 && a >= 10) && (b <= 20 && b >= 10))){
+			  return Math.max(a, b);
+		  } else if ((a <= 20 && a >= 10) && (b > 20 || b < 10)) {
+			  return a;
+		  } else if ((a > 20 || a < 10) && (b <= 20 && b >= 10)) {
+			  return b;
+		  } else {
+			  return 0;
+		  }
+	}
+	
+	public static String endUp(String str) {
+		  if(str.length() > 4){
+			  String temp = str.substring(str.length()-3, str.length());
+			  temp = temp.toUpperCase();
+			  return str.substring(0,str.length()-3) + temp;
+		  } else {
+			  return str.toUpperCase();
+		  }
+	}
+
+
 }
