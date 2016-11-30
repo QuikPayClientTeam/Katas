@@ -67,5 +67,6 @@ public class Main
 				System.out.println("Command not recognized");
 			}
 		}
+		input.close();
 	}
 }
