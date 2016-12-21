@@ -13,14 +13,28 @@ public class ToggleThemDoors {
 	 * the 100th door.
 	 */
 	
-	public static void main(){
+	public static void main(String[] args){
 		
-		boolean[] doors = new boolean[100];
+		//Door[] doors = new Door[2];
+		boolean[] doors = new boolean[10];
 		
-		for(int pass = 0; pass <=100; pass++){
-			System.out.println(pass +": Door is " + doors[pass]);
+		for(int i = 1; i < doors.length + 1; i++){
+			for (int x = 0; x < doors.length; x += i){
+				//doors[i].toggle();
+				if(doors[i-1] == true){
+					doors[i-1] = false;
+				} else {
+					doors[i-1] = true;
+				}
+				
+				//x = x + i;
+			}
+
 		}
 		
+		for(int i = 0; i < doors.length; i++){
+			System.out.println(i + ": Door :" + doors[i]);
+		}
 	}
 
 }
