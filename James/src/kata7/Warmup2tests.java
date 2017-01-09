@@ -40,6 +40,7 @@ public class Warmup2tests {
 		assertFalse(Warmup2.doubleX("abc"));
 		assertFalse(Warmup2.doubleX(""));
 		assertFalse(Warmup2.doubleX("axaxax"));
+		assertFalse(Warmup2.doubleX("aaaax"));
 	}
 	
 	@Test
