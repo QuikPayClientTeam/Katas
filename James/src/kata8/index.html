@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>James' Dice Roll</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!-- JQuery-->
@@ -16,22 +16,28 @@
 	href="../../../lib/font-awesome-4.7.0/css/font-awesome.min.css">
 <!-- isotope -->
 <script src="../../../lib/isotope.pkgd.min.js"></script>
+<!-- dice.css -->
+<link rel="stylesheet" href="dice-1.0.min.css"/>
+<!-- dice roll -->
+<script>
+
+function roll(){
+	
+}
+
+</script>
 </head>
 <body>
-	<div class="container">
-		<h1>My First Bootstrap Page</h1>
-		<p>This part is inside a .container class.</p>
-		<p>The .container class provides a responsive fixed width
-			container.</p>
-		<!-- color: #8a6d3b -->
-		<i class="fa fa-exclamation-triangle fa-2x text-warning"><span
-			class="sr-only">Warning</span></i>
 
-		<!-- color: #A94442 -->
-		<div class="text-danger">
-			<i class="fa fa-ban fa-2x"><span class="sr-only">Action
-					Not Allowed</span></i>
-		</div>
-	</div>
+
+		<span class="dice dice-1" title="Dice 1"></span>
+		<span class="dice dice-2" title="Dice 2"></span>
+		<span class="dice dice-3" title="Dice 3"></span>
+		<span class="dice dice-4" title="Dice 4"></span>
+		<span class="dice dice-5" title="Dice 5"></span>
+		<span class="dice dice-6" title="Dice 6"></span>
+		
+<button onclick="roll()">Roll</button>
+		
 </body>
 </html>
