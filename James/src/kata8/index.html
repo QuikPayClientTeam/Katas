@@ -17,27 +17,36 @@
 <!-- isotope -->
 <script src="../../../lib/isotope.pkgd.min.js"></script>
 <!-- dice.css -->
-<link rel="stylesheet" href="dice-1.0.min.css"/>
+<link rel="stylesheet" href="dice-1.0.min.css" />
 <!-- dice roll -->
-<script>
-
-function roll(){
-	
-}
-
-</script>
+<script src="dice.js"></script>
 </head>
 <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="well well-md">
+					<div id="info">
+						<div class="alert alert-info">Just click roll. dummy.</div>
+					</div>
+					<div class="well well-md">
+
+						<div id="die1">
+							<span class="dice dice-1" title="Dice 1"></span>
+						</div>
+						<div id="die2">
+							<span class="dice dice-1" title="Dice 1"></span>
+						</div>
+
+					</div>
 
 
-		<span class="dice dice-1" title="Dice 1"></span>
-		<span class="dice dice-2" title="Dice 2"></span>
-		<span class="dice dice-3" title="Dice 3"></span>
-		<span class="dice dice-4" title="Dice 4"></span>
-		<span class="dice dice-5" title="Dice 5"></span>
-		<span class="dice dice-6" title="Dice 6"></span>
-		
-<button onclick="roll()">Roll</button>
-		
+					<button class="btn btn-default btn-lg">Roll</button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
