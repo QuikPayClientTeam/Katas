@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<!-- Bootstrap -->
+		<link href="../../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../lib/jquery-3.1.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+        <script src="js/dice.js"></script>
+        <script src="js/config.js"></script>
+
+		<!-- https://diafygi.github.io/dice-css/ -->
+        <link href="css/dice-1.0.min.css" rel="stylesheet">
+        <link href="css/dice.css" rel="stylesheet">
+
+		<title>Kata 9 - Roll Dice (JavaScript)</title>
+	</head>
+	<body onload="rollDice();" style="margin-left:30px;">
+        <div id="mainDiv" class="panel panel-info">
+            <div class="panel-heading">Dice</div>
+
+            <div class="panel-body">
+
+                <div id="buttonDiv">
+                    <br>
+                    <button type="button" class="btn btn-primary" style="font-size: 2em;" onclick="rollDice()">Roll dice</button>
+                </div>
+
+                <p id="dicep" class="dicep"></p>
+
+                <div id="total" class="total alert alert-success" role="alert"></div>
+            </div>
+        </div>
+	</body>
+</html>
