@@ -197,7 +197,7 @@ public class Warmup
 	{
 		String s = "";
 
-		s = str.replaceAll("yak", "");
+		s = str.replaceAll("y.k", "");
 
 		return s;
 	}

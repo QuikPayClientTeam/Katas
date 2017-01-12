@@ -123,7 +123,7 @@ public class WarmupTest
 	{
 		assertEquals("pak", warmup.stringYak("yakpak"));
 		assertEquals("pak", warmup.stringYak("pakyak"));
-		assertEquals("123ya", warmup.stringYak("yak123ya"));
+		assertEquals("123ya", warmup.stringYak("yik123ya"));
 	}
 
 	@Test
