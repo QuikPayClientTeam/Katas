@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>High AF Cats: Projects</title>
+<!-- JQuery-->
+<script src="../../../lib/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="../../../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+<!-- isotope -->
+<script src="../../../lib/isotope.pkgd.min.js"></script>
+<!-- james' additions -->
+<script src="main.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="active"><a href="projects.html">Projects</a></li>
+					<li><a href="catcarousel.html">Cat Carousel</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
+							Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="well">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Progess bar try</h2>
+					<p>Click on the increase and decrease buttons to add or remove
+						progress.</p>
+				</div>
+				<div class="col-sm-6 text-right">
+
+					<p>
+						<strong>Current Progess:</strong>
+					</p>
+					<div id="progess-container">
+						<div class="alert alert-info">
+							<div id="percentage">50%</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="progress">
+				<div id="myprogressbar" class="progress-bar" role="progressbar"
+					aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+					style="width: 50%"></div>
+			</div>
+			<div class="container-fluid text-center">
+				<button type="button" onclick="decrease()" class="btn btn-danger">Decrease</button>
+				<button type="button" onclick="increase()" class="btn btn-success">Increase</button>
+			</div>
+		</div>
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Panel Testing</div>
+			<div class="panel-body">
+
+				<form>
+					<div class="form-group">
+						<label for="userID">User ID:</label> <input type="text"
+							class="form-control" id="userID" value="123456789">
+					</div>
+					<div class="form-group">
+						<label for="name">Full Name:</label> <input type="text"
+							class="form-control" id="name" value="James Doe">
+					</div>
+					<div class="form-group">
+						<label for="email">Email address:</label> <input type="email"
+							class="form-control" id="email" value="test@nelnet.net">
+					</div>
+					<div class="form-group">
+						<label>Order:</label> <select class="custom-select">
+							<option selected>Select Order</option>
+							<option value="1">Tuition</option>
+							<option value="2">Room & Board</option>
+							<option value="3">Other</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password:</label> <input type="password"
+							class="form-control" id="pwd" value="123456">
+					</div>
+					<div class="checkbox">
+						<label><input type="checkbox">Include Module</label>
+					</div>
+					<div class="custom-controls-stacked">
+						<label class="custom-control custom-radio"> <input
+							id="radioStacked1" name="radio-stacked" type="radio"
+							class="custom-control-input"> <span
+							class="custom-control-indicator"></span> <span
+							class="custom-control-description">MD5</span>
+						</label> <label class="custom-control custom-radio"> <input
+							id="radioStacked2" name="radio-stacked" type="radio"
+							class="custom-control-input"> <span
+							class="custom-control-indicator"></span> <span
+							class="custom-control-description">SHA256</span>
+						</label>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="reset" class="btn btn-default">Reset</button>
+				</form>
+
+
+			</div>
+		</div>
+
+	</div>
+
+	<footer class="container-fluid text-center">
+		<p>James Beagle</p>
+	</footer>
+
+</body>
+</html>
