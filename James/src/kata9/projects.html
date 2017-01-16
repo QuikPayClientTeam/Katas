@@ -85,18 +85,21 @@
 				<form>
 					<div class="form-group">
 						<label for="userID">User ID:</label> <input type="text"
-							class="form-control" id="userID" value="123456789">
+							class="form-control" id="userID" value="123456789" data-toggle="tooltip" title="Id of student.">
 					</div>
 					<div class="form-group">
-						<label for="name">Full Name:</label> <input type="text"
-							class="form-control" id="name" value="James Doe">
+						<i class="glyphicon glyphicon-user"></i> <label for="name">Full
+							Name:</label> <input type="text" class="form-control" id="name"
+							value="James Doe" data-toggle="tooltip" title="Name of student">
 					</div>
 					<div class="form-group">
 						<label for="email">Email address:</label> <input type="email"
-							class="form-control" id="email" value="test@nelnet.net">
+							class="form-control" id="email" value="test@nelnet.net"
+							data-toggle="tooltip" title="email to recieve notifications.">
 					</div>
 					<div class="form-group">
-						<label>Order:</label> <select class="custom-select">
+						<label>Order:</label> <select class="custom-select"
+							data-toggle="tooltip" title="Order to pass to">
 							<option selected>Select Order</option>
 							<option value="1">Tuition</option>
 							<option value="2">Room & Board</option>
@@ -104,24 +107,20 @@
 						</select>
 					</div>
 					<div class="form-group">
-						<label for="pwd">Password:</label> <input type="password"
-							class="form-control" id="pwd" value="123456">
+						<i class="glyphicon glyphicon-lock"></i> <label for="pwd">Password:</label>
+						<input type="password" class="form-control" id="pwd"
+							value="123456" data-toggle="tooltip" title="default: 123456">
 					</div>
 					<div class="checkbox">
 						<label><input type="checkbox">Include Module</label>
 					</div>
-					<div class="custom-controls-stacked">
-						<label class="custom-control custom-radio"> <input
-							id="radioStacked1" name="radio-stacked" type="radio"
-							class="custom-control-input"> <span
-							class="custom-control-indicator"></span> <span
-							class="custom-control-description">MD5</span>
-						</label> <label class="custom-control custom-radio"> <input
-							id="radioStacked2" name="radio-stacked" type="radio"
-							class="custom-control-input"> <span
-							class="custom-control-indicator"></span> <span
-							class="custom-control-description">SHA256</span>
-						</label>
+					<div class="form-group">
+						<div class="radio-inline">
+							<label><input type="radio" name="optradio">MD5</label>
+						</div>
+						<div class="radio-inline">
+							<label><input type="radio" name="optradio">SHA256</label>
+						</div>
 					</div>
 					<button type="submit" class="btn btn-default">Submit</button>
 					<button type="reset" class="btn btn-default">Reset</button>
