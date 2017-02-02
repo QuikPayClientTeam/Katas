@@ -2,9 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>High AF Cats: About</title>
+<title>High AF Cats: JQuery</title>
 <!-- JQuery-->
 <script src="../../../lib/jquery-3.1.1.min.js"></script>
+<!-- JQuery UI -->
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <!-- Bootstrap -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -33,9 +39,9 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
-					<li class="active"><a href="#">About</a></li>
+					<li><a href="#">About</a></li>
 					<li><a href="projects.html">Projects</a></li>
-					<li><a href="jquery.html">JQuery attempts</a></li>
+					<li class="active"><a href="jquery.html">JQuery attempts</a></li>
 					<li><a href="catcarousel.html">Cat Carousel</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -49,13 +55,50 @@
 	<br />
 	<br />
 	<div class="container">
-		<p>
-			totally used a
-			<mark>template</mark>
-			.
-		</p>
-		<p>Just went through bootstrap on w3c and trying crap out.</p>
-		<p>go to the projects page for stuff i got working.</p>
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" href="#collapse1">Draggable</a>
+					</h4>
+				</div>
+				<div id="collapse1" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div id="draggable" class="ui-widget-content">
+							<div id="box"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse2">Sorting</a>
+						</h4>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div id="sortable" class="ui-widget-content">
+								<ul id="sortable">
+									<li>Item 1</li>
+									<li>Item 2</li>
+									<li>Item 3</li>
+									<li>Item 4</li>
+									<li>Item 5</li>
+									<li>Item 6</li>
+									<li>Item 7</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
 	</div>
 
 	<br />

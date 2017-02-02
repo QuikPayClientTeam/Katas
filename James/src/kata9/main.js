@@ -81,6 +81,16 @@ function increase() {
 	// window.alert("Decrease:\n" + currentProgress + "\n" + newProgress);
 }
 
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+$(document).ready(function() {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+
+// draggable
+$(function() {
+	$("#draggable").draggable();
+});
+
+$(function() {
+	$("#sortable").sortable();
+	$("#sortable").disableSelection();
 });
