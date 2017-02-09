@@ -137,7 +137,11 @@
               <div class="form-group">
                 <label class="control-label col-sm-offset-2 col-sm-2" >Payment Method:</label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" name="paymentMethod" value="ach_cc"/>
+                  <select class="form-control" name="paymentMethod"/>
+                    <option>ach_cc</option>
+                    <option>ach</option>
+                    <option>cc</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
@@ -189,8 +193,12 @@
               </div>
               <div class="form-group">
                 <label class="control-label col-sm-offset-2 col-sm-2" >Payment Method:</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" name="paymentMethod" value="ach_cc"/>
+                <div class="col-sm-6 dropdown">
+                  <select class="form-control" name="paymentMethod"/>
+                    <option>ach_cc</option>
+                    <option>ach</option>
+                    <option>cc</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
