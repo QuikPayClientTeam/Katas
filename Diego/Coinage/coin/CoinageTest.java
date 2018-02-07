@@ -26,40 +26,35 @@ public class CoinageTest {
 		assertNotNull(c1);
 		assertNotNull(c2);
 	}
-	
+
 	@Test
 	public void testDenominations() {
 		assertTrue("c1 is using the denominations 1, 5, 10, and 25", Arrays.equals(standard, c1.getDenominations()));
 		assertTrue("c2 is using the denominations 1, 5, 10, 25, and 50", Arrays.equals(other, c2.getDenominations()));
 	}
-	
+
 	@Test
 	public void testCombinations() {
 		List<List<Integer>> combinations;
 
-//		combinations = c1.getCombinations(1);
-//		assertEquals("Number of combinations for 1 is 1", 1, combinations.size());
-//		printCombinations(combinations);
-//		combinations = c1.getCombinations(5);
-//		assertEquals("Number of combinations for 5 is 2", 2, combinations.size());
-//		printCombinations(combinations);
-//		combinations = c1.getCombinations(6);
-//		assertEquals("Number of combinations for 6 is 2", 2, combinations.size());
-//		printCombinations(combinations);
-//		combinations = c1.getCombinations(10);
-//		assertEquals("Number of combinations for 10 is 4", 4, combinations.size());
-//		printCombinations(combinations);
-//		combinations = c1.getCombinations(15);
-//		assertEquals("Number of combinations for 15 is 6", 6, combinations.size());
-//		printCombinations(combinations);
-//		combinations = c1.getCombinations(16);
-//		assertEquals("Number of combinations for 16 is 6", 6, combinations.size());
-//		printCombinations(combinations);
-//		combinations = c1.getCombinations(21);
-//		assertEquals("Number of combinations for 21 is 9", 9, combinations.size());
-//		printCombinations(combinations);
-		combinations = c2.getCombinations(30);
-//		assertEquals("Number of combinations for 100 is ?", 9, combinations.size());
+		combinations = c1.getCombinations(1);
+		assertEquals("Number of combinations for 1 is 1", 1, combinations.size());
+		combinations = c1.getCombinations(5);
+		assertEquals("Number of combinations for 5 is 2", 2, combinations.size());
+		combinations = c1.getCombinations(6);
+		assertEquals("Number of combinations for 6 is 2", 2, combinations.size());
+		combinations = c1.getCombinations(10);
+		assertEquals("Number of combinations for 10 is 4", 4, combinations.size());
+		combinations = c1.getCombinations(15);
+		assertEquals("Number of combinations for 15 is 6", 6, combinations.size());
+		combinations = c1.getCombinations(16);
+		assertEquals("Number of combinations for 16 is 6", 6, combinations.size());
+		combinations = c1.getCombinations(21);
+		assertEquals("Number of combinations for 21 is 9", 9, combinations.size());
+		combinations = c1.getCombinations(30);
+		assertEquals("Number of combinations for 30 is 18", 18, combinations.size());
+		combinations = c1.getCombinations(100);
+		assertEquals("Number of combinations for 100 is 242", 242, combinations.size());
 		printCombinations(combinations);
 	}
 

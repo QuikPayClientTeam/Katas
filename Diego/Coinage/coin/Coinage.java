@@ -7,45 +7,41 @@ import java.util.List;
 
 public class Coinage {
 	private static final int[] DEFAULT =  {1, 5, 10, 25};
-	
+
 	private int[] denominations;
 	private HashMap<Integer, List<List<Integer>>> storage;
-	
+
 	public Coinage() {
 		this(DEFAULT);
 	}
-	
+
 	public Coinage(int[] denominations) {
 		this.denominations = denominations;
 		storage = new HashMap<Integer, List<List<Integer>>>();
 	}
-	
+
 	public int[] getDenominations() {
 		return denominations;
 	}
 
 	public List<List<Integer>> getCombinations(int amount) {
-		return reduce(amount, denominations.length - 1);
+		return reduce(amount, 0);
 	}
-	
-	private List<List<Integer>> reduce(int amount, int index) {
 
+	private List<List<Integer>> reduce(int amount, int index) {
 		if (!storage.containsKey(amount)) {
 			List<List<Integer>> lists = new ArrayList<List<Integer>>();
 			
-			if (amount - denominations[index] <  0) {
-				lists.addAll(reduce(amount, index - 1));
+			if (amount - denominations[index] > 0) {
+				lists.addAll(cross(reduce(denominations[index], index), reduce(amount - denominations[index], index)));
+				if (index + 1 < denominations.length) {
+					lists.addAll(reduce(amount, index + 1));
+				}
 			}
 			else if (amount - denominations[index] == 0) {
 				List<Integer> identity = new ArrayList<Integer>();
 				identity.add(denominations[index]);
 				lists.add(identity);
-				if (index > 0 ) {
-					lists.addAll(reduce(amount, index - 1));
-				}
-			}
-			else if (amount - denominations[index] > 0) {
-				lists.addAll(cross(reduce(denominations[index], index), reduce(amount - denominations[index], index)));
 			}
 			
 			if (storage.containsKey(amount) && storage.get(amount).size() < lists.size()) {
@@ -59,7 +55,7 @@ public class Coinage {
 		}
 		
 	}
-	
+
 	private List<List<Integer>> cross(List<List<Integer>> list1, List<List<Integer>> list2) {
 		List<List<Integer>> crossProduct = new ArrayList<List<Integer>>();
 		
@@ -83,7 +79,7 @@ public class Coinage {
 		
 		return copy;
 	}
-	
+
 	private boolean isNewCombination(List<List<Integer>> lists, List<Integer> combination) {
 		Collections.sort(combination);
 		Collections.reverse(combination);
